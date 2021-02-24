@@ -1,5 +1,71 @@
+@font-face
+{
+	font-family : "police";
+	src : url('../font/go3v2.ttf');
+}
+
+@font-face
+{
+	font-family : "policea";
+	src : url('../font/RomajiMincho.otf');
+}
+
+@font-face
+{
+	font-family : "policeb";
+	src : url('../font/ChineseWatchShop.ttf');
+}
+
+:root{
+  --first-theme-color: #a7782b;
+  --second-theme-color: #e1224d;
+  --third-theme-color:  #aa2746;
+  --fourth-theme-color: #f5e5c7;
+  --fifth-theme-color: #1d2c4d;
+}
+
 body
 {
-	background-image: url('../images/ramenichiraku.jpg');
-	background-attachment: scroll;
+	background-image: url('../images/high-angle-delicious-ramen-bowl.jpg');
+	background-size: cover;
+}
+
+.navbar-brand
+{
+	font-family: "police";
+	font-size: 4em;
+	color: var(--first-theme-color);
+}
+
+.navbar-brand:hover
+{
+	color: var(--second-theme-color); 
+}
+
+.nav-link
+{
+	font-family: "policeb";
+	color: var(--second-theme-color);
+	font-size: 1.5em; 
+}
+
+.nav-link:hover
+{
+	color: var(--first-theme-color);
+}
+
+.table
+{
+	border-radius: 20px;
+	background-color: var(--third-theme-color);
+	border: none;
+	opacity: 0.90;
+}
+
+.table th,
+.table td {
+  padding: 1.75rem;
+  border: none;
+  font-size: 1em;
+  color: var(--fourth-theme-color);
 }
